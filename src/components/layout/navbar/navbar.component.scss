@@ -1,0 +1,25 @@
+.navbar {
+  margin-bottom: 3.75rem;
+  li.nav-item {
+    margin-right: 6.25rem !important;
+  }
+
+  &.navbar-light .navbar-nav .nav-link {
+    color: #000 !important;
+    &:hover,
+    &:focus {
+      color: #000 !important;
+    }
+  }
+
+  .navbar-collapse {
+    height: 0;
+    transition: height 0.5s;
+  }
+  .navbar-collapse.show {
+    height: 100%;
+    li.nav-item {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.main-footer {
+  background-color: #835d9d;
+  padding-top: 1.875rem;
+  padding-bottom: 80px;
+  text-align: center;
+  position: relative;
+  .social-icons {
+    margin-top: 1.875rem;
+    .social-icon {
+      margin-right: 1.875rem;
+      &:first-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__services {
+    position: absolute;
+    bottom: 0;
+    &.chatting {
+      left: 2%;
+    }
+    &.up {
+      right: 4%;
+    }
+  }
+}
