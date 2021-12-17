@@ -5,7 +5,6 @@ import Button from "components/button/Button.component";
 import "./UniqApps.component.scss";
 
 const UniqApps = () => {
-  const items = new Array(4);
   return (
     <section className="uniq-app">
       <div className="container">
@@ -14,7 +13,7 @@ const UniqApps = () => {
           <p>تطبيقات تقدم حلول وخدمات مميزة نوصي بتجربتها</p>
         </header>
         <div className="row">
-          {[...items].map((item, i) => (
+          {[...Array(4)].map((item, i) => (
             <CardItem key={i} />
           ))}
         </div>
